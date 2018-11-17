@@ -1,0 +1,22 @@
+{
+  "name": "gbremble-website",
+  "version": "1.0.0",
+  "description": "The personal website of Greg Bremble",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gbremble/website.git"
+  },
+  "author": "Greg Bremble",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gbremble/website/issues"
+  },
+  "homepage": "https://github.com/gbremble/website#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
