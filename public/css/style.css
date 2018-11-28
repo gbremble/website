@@ -834,3 +834,19 @@ div.opening img {
     height: 90vh
   }
 }
+
+.hero {
+  background-image: url("/images/saturn-v-launch.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  /* margin-bottom: 0; */
+  background-position: center center;
+  /* background-repeat: no-repeat; */
+  z-index: -1;
+  /* background-color: #c3e6cb; */
+  position: fixed;
+  top: 0%;
+  bottom: 0%;
+  left: 0%;
+  right: 0%;
+}
