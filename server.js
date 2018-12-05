@@ -1,6 +1,7 @@
 // ### DEPENDENCIES ###
 var express = require('express');
 var bodyParser = require('body-parser');
+var exphbs = require('express-handlebars');
 
 // ### EXPRESS CONFIG ###
 var app = express();
