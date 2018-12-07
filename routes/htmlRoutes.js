@@ -1,21 +1,18 @@
-// ### DEPENDENCIES ###
-var path = require('path');
-
 // ### ROUTING ###
 module.exports = function(app) {
     app.get('/', (req, res) => {
-        res.sendFile(path.join(__dirname, '../public/index.html'));
+        res.render('index');
     });
     app.get('/projects', (req, res) => {
-        res.sendFile(path.join(__dirname, '../public/projects.html'));
+        res.render('projects');
     });
     app.get('/writing', (req, res) => {
-        res.sendFile(path.join(__dirname, '../public/writing.html'));
+        res.render('writing');
     });
     app.get('/about', (req, res) => {
-        res.sendFile(path.join(__dirname, '../public/about.html'));
+        res.render('about');
     });
     app.get('*', (req, res) => {
-        res.sendFile(path.join(__dirname, '../public/404.html'));
+        res.render('404');
     });
 };
