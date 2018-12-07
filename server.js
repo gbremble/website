@@ -8,8 +8,20 @@ var app = express();
 
 var PORT = process.env.PORT || 8080;
 
-app.use(bodyParser.urlencoded({ extended: true }));
+// ### MIDDLEWARE ###
+app.use(bodyParser.urlencoded({
+    extended: true
+}));
 app.use(bodyParser.json());
+
+// ### HANDLEBARS CONFIG ###
+app.engine(
+    'handlebars',
+    exphbs({
+        defaultLayout: 'main',
+    }),
+);
+app.set('view engine', 'handlebars');
 
 // ### ROUTER ###
 require('./routes/htmlRoutes')(app);
