@@ -452,8 +452,26 @@ div.item {
   position: relative
 }
 
+html, body, .container, .home {
+  height: 100%;
+}
+
+div.home {
+  position: relative;
+  text-align: center;
+}
+
+h1.greeting {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  margin-top: -13px;
+}
+
 .hero {
-  background-image: url("/images/saturn-v-launch.jpg");
+  background-image: url("/images/sts134.jpg");
   background-size: cover;
   background-position: center center;
   z-index: -1;
