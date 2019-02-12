@@ -1,3 +1,88 @@
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-Light.woff');
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-ThinItalic.woff');
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-Thin.woff');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-ThinItalic.woff');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-Book.woff');
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-BookItalic.woff');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-Medium.woff');
+  font-weight: normal 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-MediumItalic.woff');
+  font-weight: normal 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-Semibold.woff');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-SemiboldItalic.woff');
+  font-weight: 600;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-Bold.woff');
+  font-weight: bold 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-BoldItalic.woff');
+  font-weight: bold 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-Heavy.woff');
+  font-weight: bold 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Cooper Hewitt';
+  src: url('/fonts/CooperHewitt/CooperHewitt-HeavyItalic.woff');
+  font-weight: bold 700;
+  font-style: italic;
+}
+
 html {
   font-size: 2.4vw;
 }
@@ -12,10 +97,6 @@ html {
   html {
     font-size: 18px;
   }
-}
-
-body {
-  background-color: #ff0;
 }
 
 * {
@@ -69,29 +150,25 @@ div#content {
 }
 
 a {
-  text-decoration: none
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline
+  text-decoration: underline;
 }
 
 p {
   font-family: 'Source Serif Pro', Georgia, serif;
   font-size: 1.1em;
   letter-spacing: -0.2pt;
-  /* -webkit-font-smoothing: subpixel-antialiased; */
+  -webkit-font-smoothing: subpixel-antialiased;
   margin: .8rem 0;
-  /* max-width: 36rem */
 }
 
-h1,
-h2 {
+h1 {
   font-family: 'Cooper Hewitt';
-  font-size: 1.8rem;
-  text-transform: uppercase;
-  /* is there a small caps text-transform property? */
-  letter-spacing: .05em;
+  font-size: 1.6rem;
+  letter-spacing: -0.05em;
   font-weight: 600;
   font-style: normal;
   line-height: 1.1;
@@ -102,25 +179,21 @@ h2 {
 }
 
 h2 {
-  border-bottom: none;
+  font-family: 'Cooper Hewitt';
   font-style: italic;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   margin-top: 2rem;
-  margin-bottom: 0rem;
-  letter-spacing: 0rem;
+  margin-bottom: -0.4rem;
 }
 
 h3 {
   font-family: 'Cooper Hewitt';
+  margin-top: 1.6rem;
+  margin-bottom: -0.4rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 14px
-}
-
-section h2,
-section h3 {
-  margin: 18px 0 0
+  letter-spacing: 0.05rem;
+  font-size: 0.8rem;
 }
 
 /* ### HEADER / NAVBAR STYLING */
@@ -238,6 +311,7 @@ body>header nav[role=main] a {
   }
 }
 
+/* ### Project page styling ### */
 div.custom-list {
   display: flex;
   flex-flow: row wrap;
@@ -286,9 +360,7 @@ h1#greeting {
   right: 0;
   margin-top: -13px;
   border-bottom: none;
-  text-transform: unset;
-  letter-spacing: -1px;
-  font-family: 'Libre Franklin';
+  letter-spacing: -0.02rem;
 }
 
 #hero {
