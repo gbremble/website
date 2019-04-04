@@ -318,14 +318,13 @@ div.custom-list {
   flex-flow: row wrap;
 }
 
-div.custom-list a:hover img {
-  filter: saturate(0) brightness(50%);
-}
+/* div.custom-list a:hover img {
+  
+} */
 
-div.custom-list a img {
-  transition: filter .1s ease-out;
-  margin-bottom: 1rem;
-}
+/* div.custom-list a img {
+  
+} */
 
 div.custom-list a span {
   position: absolute;
@@ -337,7 +336,18 @@ div.custom-list a span {
 div.item {
   display: block;
   width: 100%;
-  position: relative
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+div.item img {
+  transition: filter .1s ease-out;
+  box-shadow: 0 1px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+div.item img:hover {
+  filter: saturate(0) brightness(50%);
 }
 
 /* styles for the home/index page */
