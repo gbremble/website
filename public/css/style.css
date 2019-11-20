@@ -4,78 +4,91 @@
   font-weight: 200;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('/fonts/CooperHewitt/CooperHewitt-ThinItalic.woff');
   font-weight: 200;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('/fonts/CooperHewitt/CooperHewitt-Thin.woff');
   font-weight: 300;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('/fonts/CooperHewitt/CooperHewitt-ThinItalic.woff');
   font-weight: 300;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('/fonts/CooperHewitt/CooperHewitt-Book.woff');
   font-weight: 400;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('/fonts/CooperHewitt/CooperHewitt-BookItalic.woff');
   font-weight: 400;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('/fonts/CooperHewitt/CooperHewitt-Medium.woff');
   font-weight: normal 500;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('/fonts/CooperHewitt/CooperHewitt-MediumItalic.woff');
   font-weight: normal 500;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('/fonts/CooperHewitt/CooperHewitt-Semibold.woff');
   font-weight: 600;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('/fonts/CooperHewitt/CooperHewitt-SemiboldItalic.woff');
   font-weight: 600;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('/fonts/CooperHewitt/CooperHewitt-Bold.woff');
   font-weight: bold 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('/fonts/CooperHewitt/CooperHewitt-BoldItalic.woff');
   font-weight: bold 700;
   font-style: italic;
 }
+
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('/fonts/CooperHewitt/CooperHewitt-Heavy.woff');
   font-weight: bold 700;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'Cooper Hewitt';
   src: url('/fonts/CooperHewitt/CooperHewitt-HeavyItalic.woff');
@@ -99,6 +112,22 @@ html {
   }
 }
 
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color: #fff;
+    --background-color: #000;
+    --border-bottom-color: #f2f2f2;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --color: #222;
+    --background-color: #fff;
+    --border-bottom-color: #333;
+  }
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -119,8 +148,8 @@ html {
 
 body {
   -webkit-font-smoothing: antialiased;
-  color: #222;
-  background-color: #fff;
+  color: var(--color);
+  background-color: var(--background-color);
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   font-family: 'Libre Franklin', Helvetica, sans-serif;
@@ -157,7 +186,8 @@ a:hover {
   text-decoration: underline;
 }
 
-p, li {
+p,
+li {
   /* set font, size, and tracking */
   font-family: 'Source Serif Pro', Georgia, serif;
   font-size: 1.1em;
@@ -184,7 +214,7 @@ h1 {
   line-height: 1.1;
   margin-top: 1rem;
   margin-bottom: 2rem;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid var(--border-bottom-color);
   padding-top: 0.02em;
 }
 
@@ -397,7 +427,8 @@ h1#greeting {
   right: 0%;
 }
 
-pre.code, code {
+pre.code,
+code {
   background-color: #282c34;
   color: #c8c8c8;
   padding: 1rem 2rem;
