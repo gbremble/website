@@ -1,26 +1,29 @@
+/* eslint-disable no-console */
 // ### DEPENDENCIES ###
-var express = require('express');
-var bodyParser = require('body-parser');
-var exphbs = require('express-handlebars');
+const express = require('express');
+const bodyParser = require('body-parser');
+const exphbs = require('express-handlebars');
 
 // ### EXPRESS CONFIG ###
-var app = express();
+const app = express();
 
-var PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3000;
 
 // ### MIDDLEWARE ###
-app.use(bodyParser.urlencoded({
-    extended: true
-}));
+app.use(
+  bodyParser.urlencoded({
+    extended: true,
+  }),
+);
 app.use(bodyParser.json());
 app.use(express.static('public'));
 
 // ### HANDLEBARS CONFIG ###
 app.engine(
-    'handlebars',
-    exphbs({
-        defaultLayout: 'main',
-    }),
+  'handlebars',
+  exphbs({
+    defaultLayout: 'main',
+  }),
 );
 app.set('view engine', 'handlebars');
 
@@ -29,5 +32,5 @@ require('./routes/htmlRoutes')(app);
 
 // ### LISTENER ###
 app.listen(PORT, () => {
-    console.log(`app is listening on port ${PORT}`)
+  console.log(`app is listening on port ${PORT}`);
 });
