@@ -333,6 +333,10 @@ body>header ul.social li:last-child {
   margin-right: 0;
 }
 
+body>header ul.social li img {
+  width: 20px;
+}
+
 @media(min-width:700px) {
   body>header ul.social {
     display: block;
